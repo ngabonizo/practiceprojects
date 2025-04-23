@@ -7,16 +7,25 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 15px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
 }
 
-.left-section{
-  border: 2px solid green;
-  width: 150px;
+@media(max-width: 800px){
+  .header .left-section{
+    width: unset;
+  }
+}
+.left-section .amazon-header-link{
+  display: inline-block;
+  border: 1px solid red;
+  padding: 6px
 }
 .left-section .amazon-logo{
   width: 100px;
-  padding-left: 20px;
-  padding-top: 5px;
+  margin-top: 5px;
 }
 
 .middle-section{
@@ -26,13 +35,24 @@
   display: flex;
 }
 .middle-section .search-field {
-  height: 35px;
+  height: 38px;
   margin-left: 20px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   border: 0px;
+  font-size: 16px;
+  flex: 1;
+}
+.middle-section .search-button{
+  background-color: rgb(254, 189, 105);
+  width: 50px;
+  height: 42px;
+  padding: 0 6px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  flex-shrink: 0;
 }
 .middle-section .search-icon{
   height: 35px;
