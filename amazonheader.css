@@ -36,7 +36,7 @@
 }
 .middle-section .search-field {
   height: 38px;
-  margin-left: 20px;
+  padding-left: 15px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -55,7 +55,33 @@
   flex-shrink: 0;
 }
 .middle-section .search-icon{
-  height: 35px;
+  height: 22px;
   border: 0px;
-  background-color: yellow
+ margin-left: 2px;
+ margin-top: 2px;
+}
+.right-section {
+  width: 180px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: end;
+}
+.right-section .cart-link {
+  color: white;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 2px;
+  text-decoration: none;
+  border: 1px solid rgba(0,0,0,0);
+}
+.right-section .returns-text {
+  display: block;
+  font-size: 13px;
+  cursor: pointer;
+}
+.right-section .orders-link {
+  display: block;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
 }
