@@ -1,9 +1,10 @@
 .header{
-  border: 2px solid blue;
+  font-family: Roboto, Arial;
   background-color: rgb(19, 25, 33);
   color: white;
   height: 60px;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   padding: 0 15px;
@@ -20,7 +21,6 @@
 }
 .left-section .amazon-header-link{
   display: inline-block;
-  border: 1px solid red;
   padding: 6px
 }
 .left-section .amazon-logo{
@@ -29,27 +29,36 @@
 }
 
 .middle-section{
-  border: 2px solid red;
+  
+  flex: 1;/*revise style*/
   max-width: 850px;
   margin: 0 10px;
   display: flex;
+  border: none;
 }
 .middle-section .search-field {
   height: 38px;
-  padding-left: 15px;
+  width: 0;
+  background-color: white;
+ /* padding-left: 15px;*/
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
   border: 0px;
   font-size: 16px;
   flex: 1;
 }
+.search-field::placeholder{
+  font-family: Roboto, Arial;
+  font-size: 16px;
+  padding-left: 10px;
+}
 .middle-section .search-button{
   background-color: rgb(254, 189, 105);
-  width: 50px;
-  height: 42px;
+  width: 45px;
+  height: 40px;
   padding: 0 6px;
+  margin-left: -1px;
+  border: none;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   flex-shrink: 0;
@@ -61,27 +70,57 @@
  margin-top: 2px;
 }
 .right-section {
-  width: 180px;
+  width: 200px;
+  height: 60px;
   flex-shrink: 0;
   display: flex;
   justify-content: end;
 }
-.right-section .cart-link {
+.right-section .orders-link {
   color: white;
   display: inline-block;
-  padding: 10px;
+ /* height: 40px;*/
+  padding: 6px;
   border-radius: 2px;
   text-decoration: none;
   border: 1px solid rgba(0,0,0,0);
 }
+/*returns text need styling */
 .right-section .returns-text {
   display: block;
+  height: 10px;
   font-size: 13px;
   cursor: pointer;
 }
-.right-section .orders-link {
+/*orders link needs styling*/
+.right-section .orders-text {
+  font-family: Roboto, Arial;
   display: block;
   font-size: 15px;
   font-weight: 700;
   cursor: pointer;
 }
+.right-section .cart-section{
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid rgba(0,0,0,0);
+}
+.right-section .cart-icon{
+  width: 50px;
+}
+.right-section .cart-quantity{
+  color: rgb(240,136,4);
+  font-size: 16px;
+  font-weight: 700;
+  position: absolute;
+  top: 4px;
+}
+
+/*
+trying to position the cart quantity within cart section
+using positioning
+*/
