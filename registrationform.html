@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Registration Form</title>
+    
+    <style>
+      body{
+        background-color: whitesmoke;
+        font-family: sans-serif;
+      }
+     
+      div {
+        background-color: rgb(91, 88, 88);
+        color: white;
+        width: 50%;
+        max-width: 100%; 
+        margin-left: 0 auto;
+        padding: 10px 30px 10px 20px;
+        border-radius: 5px;
+        margin: 0 auto;
+        display: block;
+      }
+      h1{
+        color: black;
+        margin-bottom: 40px;
+      }
+
+      .form{
+        padding-bottom: 3px;
+      }
+      .submit-button{
+        height: 25px;
+        margin-left: 110px;
+        margin-top: 10px;
+      }
+
+    .form{
+      width: 150px;
+      margin-bottom: 5px;
+    }
+    </style>
+  </head>
+ <body bgcolor="green" text="white">
+   <h1>Registration Form</h1>
+      <form> <!--inspect the form tag-->
+        <div>
+          
+           Name: <input type="text" class="form" name="name"placeholder="Enter your fullnames"><br/>
+
+           Email: <input type="email" class="form" name="emial" placeholder="Enter your email"><br/>
+
+           Username: <input type="text" class="form" name="username" placeholder="Enter your user name"><br/>
+
+           Password: <input type="password" class="form" name="password" placeholder="Enter your password" required> <br/>
+
+           Confirm password: <input type="password" class="form" name="password" placeholder="Confirm password"><br/>
+
+           <button class="submit-button">Register</button>
+        </div>
+      </form>
+ </body>
+</html>
