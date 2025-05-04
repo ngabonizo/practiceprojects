@@ -133,7 +133,18 @@
   padding-left: 2px;
 }
 
-/*
-trying to position the cart quantity within cart section
-using positioning
-*/
+/* body */
+
+.product-grid {
+  display: flex;
+  margin-top: 60px;
+}
+
+.product-container {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid red;
+}
+.product-container img {
+ height: 200px;
+}
