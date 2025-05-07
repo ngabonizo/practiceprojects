@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, intial-scale=1.0">
+  <title>Navigation bar</title>
+  
+  <style>
+    .body{
+      margin: 0;
+    }
+    h1{
+      white-space: nowrap;
+      font-family: Roboto, Arial, Helvetica, sans-serif;
+      color: rgb(77, 70, 70);
+      padding-left: 10px;
+    }
+    .navbar{
+      display: flex;
+      position: fixed;
+      right: 10px;
+      left: 10px;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color: rgb(188, 180, 180);
+      top: 0px;
+      box-shadow: 2px 2px 5px 1px gray; 
+      border-radius: 5px;
+    }
+
+    a{
+      color: green;
+      font-size: 20px;
+      text-decoration: none;/*removes underlines*/
+      padding: 10px;
+    }
+
+    ul li{
+      list-style: none;/*removed bullet points from list*/
+      display: inline;
+      padding-top: 16px;
+      white-space: nowrap;
+    }
+
+    @media(max-width: 553px){
+       .navbar ul li{
+        display: none;
+       }
+
+       .menu {
+     display: block;
+     padding-right: 7px;
+     color: green;
+}
+    }
+    @media(min-width: 553px){
+      .menu{
+        display: none;
+      }
+    }
+
+    .list-items{
+     /* border: 2px solid blue;*/
+      display: flex;
+
+    }
+   .home-page{
+    font-family: none;
+    text-align: center;
+    color: black;
+    margin-top: 100px;
+    text-decoration: underline;
+   }
+    
+  </style>
+</head>
+
+<body>
+    <head>
+      <div class="navbar">
+        <h1>NGABO Isaac</h1>
+        <ul class="list-items">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+   <h1 class="menu">Menu</h1> 
+      </div>
+    </head>
+
+    <h1 class="home-page">Home Page</h1>
+</body>
+</html>
