@@ -136,8 +136,9 @@
 /* body */
 
 .product-grid {
-  display: flex;
+  display: grid;
   margin-top: 60px;
+  display: 2px solid blue;
 }
 
 .product-container {
@@ -147,4 +148,19 @@
 }
 .product-container img {
  height: 200px;
+}
+ 
+.product-rating-container{
+ display: flex;
+ align-items: center;
+}
+
+.product-rating-image{
+  width: 100px;
+  border: 2px solid green;
+}
+.product-count{
+  font-size: 20px;
+  color: blue;
+  font-weight: 200;
 }
