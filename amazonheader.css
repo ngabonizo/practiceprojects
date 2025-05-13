@@ -140,8 +140,9 @@ body{
 
 .product-grid {
   display: grid;
+  grid-template-columns: 250px 250px 250px;
   margin-top: 60px;
-  display: 2px solid blue;
+  gap: 0;
 }
 
 .product-container {
@@ -152,8 +153,11 @@ body{
 }
 
 .product-image-container{
-  display: inline-block;
+  display: flex;
+  justify-content: center;/*centers horizontally*/
   margin-bottom: 15px;
+ /* width: fit-content;  this makes container fit 
+  height: fit-content;*/
 }
  .product-image{
   width: 160px;
@@ -205,10 +209,11 @@ margin-right: 6px;
 
 .add-to-cart-button {
   background-color: rgb(254, 209, 9);
-  width: 150px;
+  width: 200px;
   height: 32px;
   font-size: 13px;
   font-weight: 130;
   border-radius: 15px;
   border: none;
+  margin: 0 auto;
 }
