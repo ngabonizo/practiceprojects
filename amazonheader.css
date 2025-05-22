@@ -136,11 +136,65 @@ body{
   padding-left: 2px;
 }
 
+.right-section-mobile{
+  display: block
+}
+.right-section-mobile .humberger-menu{
+  display: block;
+  padding: 6px;
+ cursor: pointer;
+}
+
+@media(max-width: 575px){
+  .right-section-mobile{
+    display: block;
+  }
+}
+@media(min-width: 576px){
+  .right-section-mobile{
+    display: none;
+  }
+}
+
+@media(max-width: 575px){
+  .right-section{
+    display: none;
+  }
+}
+
+@media(max-width: 575px){
+  .amazon-logo{
+    display: none;
+  }
+}
+@media(min-width: 576px){
+  .amazon-logo{
+    display: block;
+  }
+}
+ @media(max-width: 575px){
+  .amazon-mobile-logo-white{
+    display: block;
+    height: 35px;
+    margin-bottom: 10px;
+  }
+ }
+  @media(min-width: 576px){
+    .amazon-mobile-logo-white{
+      display: none;
+    }
+  }
+
+  @media(max-width: 800px){
+    .left-section{
+      width: unset;
+    }
+  }
 /* body */
 
 .product-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   margin-top: 60px;
   gap: 0;
 }
@@ -154,7 +208,7 @@ body{
 @media(max-width: 575px){
   .product-grid{
     grid-template-columns:1fr 1fr;
-    max-width: 300px; 
+     
   }
 }
 @media(min-width:576px) and (max-width: 799px){ 
