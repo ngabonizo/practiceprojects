@@ -184,8 +184,8 @@ body{
       display: none;
     }
   }
-
-  @media(max-width: 800px){
+/*this media query is not working*/
+  @media(min-width: 700px){
     .left-section{
       width: unset;
     }
