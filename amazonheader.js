@@ -1,4 +1,5 @@
 //save the data
+/*
 const products = [
   {
   image: 'images/products/athletic-cotton-socks-6-pairs.jpg',
@@ -55,6 +56,7 @@ const products = [
   priceCents: 3499
 }
 ];
+*/
 
 //3.combine the HTML and save to webpage
 let productsHTML = '';
